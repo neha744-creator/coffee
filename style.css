@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #551b06;
+}
+
+header {
+
+    background-image: url(./Assets/images/img8.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+}
+
+nav {
+    padding-top: 10px;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    top: 2rem;
+    color: #f09a7e;
+}
+
+nav .logo {
+
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 6rem;
+}
+
+nav .MainMenu {
+    display: flex;
+    list-style: none;
+    width: 45%;
+
+}
+
+nav .MainMenu li a {
+    color: #f09a7e;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    transform: 0.2s;
+    padding: 15px;
+}
+
+nav .MainMenu li a:hover {
+    background-color: #873e23;
+    border-radius: 20px;
+    transition: 1s;
+    position: relative;
+    color: black;
+}
+
+nav .OpenMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .MainMenu .CloseMenu,
+.icons {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.jambotron {
+    /* margin-top: 16rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    color: #f09a7e;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #f09a7e;
+    border: 2px solid #873e23;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: 2rem;
+    text-align: center;
+    z-index: 1;
+    background: transparent;
+}
+
+span {
+    background-color: #873e23;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.about {
+    background-color: #551b06;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+    color: #f09a7e;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.l1 {
+    background-color: #f09a7e;
+    width: 17%;
+    height: 0.7rem;
+    border-radius: 20px;
+
+}
+
+.l2 {
+    background-color: #f09a7e;
+    width: 10%;
+    height: 1rem;
+    position: relative;
+    top: 1rem;
+    border-radius: 20px;
+    margin-bottom: 20px
+}
+
+.about h1 {
+    font-size: 65px;
+
+}
+
+.story {
+    min-height: 85vh;
+    background-color: #551b06;
+    color: #f09a7e;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ss p {
+
+    font-size: large;
+}
+
+.Making {
+    background-color: #551b06;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+    color: #f09a7e;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Making.l1 {
+    background-color: #551b06;
+    width: 17%;
+    height: 0.7rem;
+    border-radius: 20px;
+
+}
+
+.Making.l2 {
+    background-color: #551b06;
+    width: 10%;
+    height: 1rem;
+    position: relative;
+    top: 1rem;
+    border-radius: 20px;
+    margin-bottom: 20px
+}
+
+.Making h1 {
+    font-size: 65px;
+
+}
+
+.container {
+    height: 85vh;
+    background-color: #551b06;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cardcontainer {
+    background-color: #551b06;
+    margin-top: 20px;
+    justify-content: center;
+    width: 45%;
+    margin-left: 30%;
+}
+
+.cards {
+    background-color: #551b06;
+    text-align: center;
+    box-shadow: 2px 3px 3px black;
+    color: #f09a7e;
+
+}
+
+.product h1 {
+    font-size: 65px;
+    color: #f09a7e;
+}
+
+.product {
+    background-color: #551b06;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: center;
+    color: #f09a7e;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.product.l1 {
+    background-color: #551b06;
+    width: 17%;
+    height: 1rem;
+    border-radius: 20px;
+
+}
+
+.product.l2 {
+    background-color: #551b06;
+    width: 10%;
+    height: 1rem;
+    position: relative;
+    top: 1rem;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.img-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    aspect-ratio: 16/9;
+}
+
+.img-gallery img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.main {
+    min-width: 120px;
+    height: 800px;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #f09a7e;
+    margin-bottom: 2rem;
+}
+
+.form {
+    text-align: center;
+    width: 650px;
+}
+
+.form-text {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.form-text h1 span img {
+    margin: 0 10px;
+}
+
+.form-text h1 {
+
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form-text p {
+
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: large;
+}
+
+.main-form div {
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+    color: #f09a7e;
+}
+
+.main-form div input {
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid #f09a7e;
+    ;
+    font-size: 20px;
+
+    outline: none;
+    padding: 3px 0 3px 10px;
+}
+
+.main-form div span {
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+
+    font-size: 25px;
+}
+
+#submit {
+    width: 100%;
+    text-align: center;
+}
+
+#submit input {
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: #873e23 !important;
+    color: white !important;
+}
+
+#submit input:active {
+    font-size: 19px;
+    background-color: #fff !important;
+    color: black !important;
+}
+
+.footer {
+    text-align: center;
+    color: #f09a7e;
+
+}
+
+.footer .box-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: flex-start;
+}
+
+.footer .box-container .box {
+    font-size: 1.3rem;
+}
+
+.footer .box-container .box h3 {
+    margin: 1rem 0;
+
+}
+.by{
+    text-align: center;
+   
+}
+.rr {
+    margin-top: 20px;
+    color: #f09a7e;
+}
+
+
+
+
+
+
+
+
+@media(max-width:800px) {
+    nav .MainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        transform: top 1s ease 0s;
+        display: none;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav .MainMenu li a {
+        color: aliceblue;
+    }
+
+    nav .MainMenu .CloseMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .OpenMenu {
+        display: block;
+
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+        color: white;
+    }
+
+    header {
+        /* position: absolute; */
+        width: 100%;
+    }
+
+    nav .MainMenu li a:hover {
+        background-color: #873e23;
+        color: black;
+        font-weight: bold;
+        transition: 1s;
+    }
+
+    nav .logo {
+        margin-left: 19px;
+        margin-top: 0.5rem;
+
+    }
+}
